@@ -1,0 +1,4 @@
+node_modules/
+.idea/
+__MACOSX/
+npm-debug.log

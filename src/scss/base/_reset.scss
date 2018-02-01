@@ -10,7 +10,7 @@ body {
   font-family: Roboto;
   font-size: 16px;
   color: #222634;
-  background: #ffffff;
+  background: #fafbfc;
 }
 
 * {
@@ -21,6 +21,7 @@ strong {
   font-weight: 700;
 }
 a {
+  color: #2b69ff;
   text-decoration: none;
 }
 
@@ -32,6 +33,11 @@ h5,
 h6,
 p {
   margin: 0;
+  color: #121926;
+  font-weight: normal;
+}
+p {
+  font-weight: 200;
 }
 ul {
   list-style: none;

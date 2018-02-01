@@ -13,7 +13,9 @@ const Layout = props => (
         </div>
         <nav>
           <ul className="menu">
-            <NavBarItem url="/">How it works</NavBarItem>
+            <NavBarItem exact url="/">
+              How it works
+            </NavBarItem>
             <NavBarItem url="/calculator">Calendar</NavBarItem>
             <NavBarItem url="/about">Contact</NavBarItem>
           </ul>
@@ -21,14 +23,14 @@ const Layout = props => (
       </div>
     </header>
 
-    <div className="content">{props.children}</div>
+    <main className="content">{props.children}</main>
 
     <footer className="footer">
       <div className="container-bg">
         <div className="copy">© 2017 Something.</div>
         <nav>
           <ul className="menu">
-            <NavBarItem url="/">How it works</NavBarItem>
+            <NavBarItem url="/not-exist">How it works</NavBarItem>
             <NavBarItem url="/not-exist">Terms</NavBarItem>
             <NavBarItem url="/not-exist">Privacy</NavBarItem>
             <NavBarItem url="/not-exist">Security</NavBarItem>

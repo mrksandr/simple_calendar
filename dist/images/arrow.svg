@@ -1,0 +1,12 @@
+<svg width="15" height="9" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Arrow Icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1222 -566)">
+<g id="Arrow Icon" opacity="0.3">
+<use xlink:href="#path0_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 1237 575)" fill="#222634"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 13.4893 0L 15 1.50892L 9.01071 7.49108L 7.5 9L 5.98929 7.49108L 0 1.50892L 1.51071 0L 7.5 5.98216L 13.4893 0Z"/>
+</defs>
+</svg>

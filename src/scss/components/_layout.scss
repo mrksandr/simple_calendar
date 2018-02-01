@@ -10,7 +10,18 @@ html {
 
 .content {
   flex: 1 0 auto;
-  padding: 20px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 45px auto 25px;
+  max-width: 980px;
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+h1 {
+  margin: 15px 0 30px;
 }
 
 .header {
@@ -59,8 +70,8 @@ html {
         &:hover {
           color: #8a98bd;
         }
-        .active {
-          color: #4caf50;
+        &.active {
+          color: #8a98bd;
         }
       }
     }
@@ -101,10 +112,40 @@ html {
         &:hover {
           color: #939ec3;
         }
-        .active {
+        &.active {
           color: #939ec3;
         }
       }
     }
+  }
+}
+
+.label {
+  display: inline;
+  padding: 2px 5px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  font-family: 'Courier New';
+}
+
+.block-info {
+  font-family: 'Courier New';
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #f6f8fa;
+}
+@media screen and (max-width: 900px) {
+  .content,
+  .header,
+  .footer {
+    flex-flow: column;
   }
 }

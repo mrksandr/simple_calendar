@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavBarItem from './common/NavbarItem';
 
 import '../scss/style.scss';
 
@@ -12,50 +13,28 @@ const Layout = props => (
         </div>
         <nav>
           <ul className="menu">
-            <li>
-              <a href="#">How it works</a>
-            </li>
-            <li>
-              <a href="#">Calendar</a>
-            </li>
-            <li>
-              <a href="#">Contact us</a>
-            </li>
+            <NavBarItem url="/">How it works</NavBarItem>
+            <NavBarItem url="/calculator">Calendar</NavBarItem>
+            <NavBarItem url="/about">Contact</NavBarItem>
           </ul>
         </nav>
       </div>
     </header>
 
-    <div className="content">
-      <h1>Sticky Footer with Flexbox</h1>
-      <p>
-        <button id="add">Add Content</button>
-      </p>
-    </div>
+    <div className="content">{props.children}</div>
 
     <footer className="footer">
       <div className="container-bg">
         <div className="copy">© 2017 Something.</div>
         <nav>
           <ul className="menu">
-            <li>
-              <a href="#">Terms</a>
-            </li>
-            <li>
-              <a href="#">Privacy</a>
-            </li>
-            <li>
-              <a href="#">Security</a>
-            </li>
-            <li>
-              <a href="#">Status</a>
-            </li>
-            <li>
-              <a href="#">Help</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            <NavBarItem url="/">How it works</NavBarItem>
+            <NavBarItem url="/not-exist">Terms</NavBarItem>
+            <NavBarItem url="/not-exist">Privacy</NavBarItem>
+            <NavBarItem url="/not-exist">Security</NavBarItem>
+            <NavBarItem url="/not-exist">Status</NavBarItem>
+            <NavBarItem url="/not-exist">Help</NavBarItem>
+            <NavBarItem url="/not-exist">Contact</NavBarItem>
           </ul>
         </nav>
       </div>

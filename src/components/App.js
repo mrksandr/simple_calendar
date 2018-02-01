@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import IndexPage from './pages/IndexPage';
 import CalculatorPage from './pages/CalculatorPage';
 import AboutPage from './pages/ContactPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const App = () => (
   <Switch>
@@ -12,7 +13,7 @@ const App = () => (
     <Route path="/calculator" component={CalculatorPage} />
     <Route path="/about" component={AboutPage} />
 
-    <Route path="*" render={() => <h1>Not found</h1>} />
+    <Route path="*" component={NotFoundPage} />
   </Switch>
 );
 

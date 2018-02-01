@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -11,6 +12,9 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
     publicPath: '/dist/',
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -24,7 +28,7 @@ module.exports = {
         test: /\.scss?$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: 'css-loader!sass-loader',
+          use: ['css-loader?-url&sourceMap', 'postcss-loader', 'sass-loader'],
         }),
       },
       {

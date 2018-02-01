@@ -1,0 +1,110 @@
+html {
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  background: #213b82;
+  flex-shrink: 0;
+  font-size: 14px;
+  padding: 10px 17px;
+
+  .container-bg {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    div.logo {
+      display: flex;
+      padding: 2px 0;
+      color: $white;
+      font-size: 16px;
+      align-items: center;
+      .circle {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #2161b7;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 36px;
+      }
+    }
+    ul.menu {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      margin: 0 12px;
+      padding: 10px 0;
+      li a {
+        display: block;
+        padding: 0 0 0 30px;
+        color: #e0e3ed;
+        text-decoration: none;
+        &:hover {
+          color: #8a98bd;
+        }
+        .active {
+          color: #4caf50;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  background: linear-gradient(to bottom, #1b2b58, #1c2e5a);
+  flex-shrink: 0;
+  font-size: 14px;
+  padding: 10px 17px;
+
+  .container-bg {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    div.copy {
+      padding: 7px 0;
+      color: #78879f;
+    }
+    ul.menu {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      margin: 0 12px;
+      padding: 7px 0;
+      li a {
+        display: block;
+        padding: 0 0 0 30px;
+        color: #7b839d;
+        text-decoration: none;
+        &:hover {
+          color: #939ec3;
+        }
+        .active {
+          color: #939ec3;
+        }
+      }
+    }
+  }
+}

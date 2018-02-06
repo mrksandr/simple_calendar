@@ -2,13 +2,6 @@ import React, { Component } from 'react';
 import Layout from '../Layout';
 import Card from '../Card';
 
-function encodeHTML(raw) {
-  return raw.replace(
-    /[\u00A0-\u9999<>\&]/gim,
-    i => '&#' + i.charCodeAt(0) + ';',
-  );
-}
-
 const IndexPage = () => (
   <Layout>
     <div>

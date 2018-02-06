@@ -24,6 +24,18 @@ h1 {
   margin: 15px 0 30px;
 }
 
+.btn {
+  background: #1367d7;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  &:hover {
+    background: #3c7dd3;
+  }
+}
+
 .header {
   display: flex;
   background: #213b82;

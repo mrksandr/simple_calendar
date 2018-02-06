@@ -1,0 +1,81 @@
+.contact-link-block {
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 8px;
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px #e8e9ea;
+  border-radius: 4px;
+  &:hover {
+    box-shadow: 0px 2px 10px rgba(19, 19, 19, 0.09);
+  }
+  .contact-link-header {
+    display: flex;
+    padding: 2px 0;
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+
+    .contact-link-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #1367d7;
+      margin-right: 15px;
+      text-align: center;
+      line-height: 36px;
+      color: #ffffff;
+      &.fb {
+        background-color: #2161b7;
+        background-image: url('/dist/images/icon-fb.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+      &.tw {
+        background-color: #00abef;
+        background-image: url('/dist/images/icon-tw.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+      &.linked {
+        background-color: #213b82;
+        background-image: url('/dist/images/icon-linked.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+      &.mail {
+        background-color: #ff123b;
+        background-image: url('/dist/images/icon-mail.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+      &.git {
+        background-color: #ffffff;
+        background-image: url('/dist/images/icon-git.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+    .btn {
+      position: relative;
+      min-width: 115px;
+      margin-left: auto;
+      padding-right: 20px;
+      &:before {
+        position: absolute;
+        content: '';
+        background: url('/dist/images/arrow-btn.svg') no-repeat;
+        right: 10px;
+        color: #ffffff;
+        width: 6px;
+        height: 8px;
+        top: 50%;
+        margin-top: -4px;
+      }
+    }
+  }
+}

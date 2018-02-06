@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import toogleBlock from './decorators/toogleBlock';
+import toogleBlock from '../decorators/toogleBlock';
 
 import ReactDOMServer from 'react-dom/server';
 import { Parser as HtmlToReactParser } from 'html-to-react';

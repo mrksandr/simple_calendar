@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import toogleBlock from './decorators/toogleBlock';
 
+import ReactDOMServer from 'react-dom/server';
+import { Parser as HtmlToReactParser } from 'html-to-react';
+const htmlToReactParser = new HtmlToReactParser();
+
 class Card extends Component {
   render() {
     const { isOpen, toggleOpen, title } = this.props;
@@ -25,11 +29,10 @@ class Card extends Component {
   getBody() {
     if (!this.props.isOpen || !this.props.body) return null;
 
-    return (
-      <div class="toogle-body">
-        <div dangerouslySetInnerHTML={{ __html: this.props.body }} />
-      </div>
-    );
+    const reactElement = htmlToReactParser.parse(this.props.body);
+    // const reactHtml = ReactDOMServer.renderToStaticMarkup(reactElement);
+
+    return <div className="toogle-body">{reactElement}</div>;
   }
 }
 
